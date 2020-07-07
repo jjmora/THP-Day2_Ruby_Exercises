@@ -8,7 +8,7 @@ if number <= 0
   print "> "
   number = gets.chomp.to_i
 elsif
-  number.times do
+  while number > 0
     puts i
     number -= 1
     i += 1
