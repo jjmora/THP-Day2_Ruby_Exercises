@@ -3,7 +3,7 @@ total = 50
 j = 1
 i = 0
 
-total.times do
+while total > 0 
   if j < 10
     emails[i] = "jean.dupont.0#{j}@email.fr"
   else 

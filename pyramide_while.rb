@@ -7,7 +7,7 @@ spaces = number - i
 if number > 25 || number < 1
   puts "I need a number between 1 and 25. Please try again."
 else
-  number.times do
+  while i <= number
     spaces.times do
       print " " 
     end

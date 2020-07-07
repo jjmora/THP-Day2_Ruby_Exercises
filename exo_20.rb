@@ -6,7 +6,7 @@ i = 1
 if number > 25 || number < 1
   puts "I need a number between 1 and 25. Please try again."
 else
-  while i <= number
+  number.times do
     i.times do
       print "#" 
     end
