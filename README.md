@@ -12,4 +12,3 @@ Ruby Exercises from The Hacking Project
   ########
  #########
 ##########
-
