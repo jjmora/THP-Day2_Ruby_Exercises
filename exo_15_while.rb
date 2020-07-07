@@ -3,9 +3,8 @@ print "> "
 year_of_birth = gets.chomp.to_i
 counter = year_of_birth
 i = 0
-iterator = 2020 - counter + 1
 
-iterator.times do
+while counter <= 2020
   if counter <2020
    puts "#{counter} : Your age in #{counter} was #{i}"
    i += 1
@@ -15,3 +14,4 @@ iterator.times do
     counter += 1
   end
 end
+

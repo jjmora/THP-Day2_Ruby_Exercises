@@ -1,20 +1,19 @@
-puts "What is your year of birth?"
+puts "How old are you?"
 print "> "
-year_of_birth = gets.chomp.to_i
-counter = year_of_birth
-reverse_counter = 2020 - counter
-age = 0
+age = gets.chomp.to_i
 
-while counter <= 2020
-  if counter < 2019
-    puts "#{counter} : #{reverse_counter} years ago you were #{age} years old"
-  elsif counter == 2019
-    puts "#{counter} : #{reverse_counter} year ago you were #{age} years old"
-  elsif counter == 2020
-    puts "#{counter} : Your age in #{counter} is #{age} years old"
+counter = age
+iterator = counter + 1
+age_reverse = 0
+
+
+iterator.times do
+  if counter > 0
+    puts "#{counter} years ago you were #{age_reverse} years old"
+  else
+    puts "Now you're #{age_reverse} years old"
   end
-    age += 1
-    counter += 1
-    reverse_counter -= 1
+    age_reverse += 1
+    counter -= 1
 end
 
